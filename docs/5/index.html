@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="author" content="ytyaru">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja">
+<link rel="icon" href="../asset/image/author/ytyaru.png">
+<link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="../lib/van/1.2.6/nomodule.min.js"></script>
+<script src="../js/footer.js"></script>
+<script src="js/descriptor.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<main>
+    <button>Download</button><button>入力方法切替（text/select）</button><button>例を入力する／入力値をクリアする</button><br>
+    <input placeholder="ClassName"></input><input placeholder="extends ClassName"></input><br>
+    <!-- name, type, initValue -->
+    <label>名</label>　<label>型</label>　<label>初期値</label><br>
+    <input placeholder="PropertyName"></input><input list="type-list"></input><input></input><br>
+    <input></input><input list="type-list"></input><input></input><br>
+    <input></input><input list="type-list"></input><input></input><br>
+    <button>＋</button><br>
+    <textarea>入力テキスト</textarea><textarea>出力ソースコード</textarea>
+    <datalist id="type-list">
+        <option value="any"></option>
+        <option value="str"></option>
+        <option value="int"></option>
+        <option value="bool"></option>
+        <option value="float"></option>
+        <option value="number"></option>
+        <option value="bigint"></option>
+        <option value="date"></option>
+        <option value="url"></option>
+        <option value="[T]"></option>
+        <option value="err<T>"></option>
+        <option value="cls<T>"></option>
+        <option value="ins<T>"></option>
+    </datalist>
+    <datalist id="indent-list">
+        <option value="tab"></option>
+        <option value="space-2"></option>
+        <option value="space-4"></option>
+        <option value="space-8"></option>
+    </datalist>
+    <datalist id="newline-list">
+        <option value="LF"></option>
+        <option value="CR-LF"></option>
+        <option value="CR"></option>
+    </datalist>
+</main>
+<footer></footer>
+</body>
+</html>
+<!-- https://coliss.com/articles/build-websites/operation/work/html-template-for-web-apps-or-sites.html -->
+<!-- https://coliss.com/articles/build-websites/operation/work/html5-template-for-2018.html -->
